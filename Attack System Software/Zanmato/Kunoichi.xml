@@ -1,0 +1,1633 @@
+<?xml version="1.0" encoding="GB2312" ?>
+<Kunoichi>
+	<Characters>
+		<Women>
+			<Slash kill="5.0" destroy="5" armor="0" easy="2" normal="1" hard="0.749998" zero="1" one="2"
+				two="3" three="4" four="5" five="6" six="7" />
+			<ShortSword kill="2.5" destroy="2.5" armor="0" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Single kill="2" destroy="2" armor="0" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Burst kill="2" destroy="10" armor="10" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Kick kill="0" destroy="5" armor="5" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Smash kill="0" destroy="10" armor="10" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Special kill="25" destroy="25" armor="10" easy="1.5" normal="1" hard="0.5" zero="1" one="2"
+				two="3" three="4" four="5" five="6" six="7" />
+			<Wall kill="10" destroy="10" armor="0" easy="2" normal="1" hard="0.749998" zero="1" one="2"
+				two="3" three="4" four="5" five="6" six="7" />
+		</Women>
+		<Hotsuma>
+			<Slash kill="5" destroy="5" armor="0" easy="2" normal="1" hard="0.749998" zero="1" one="4"
+				two="6" three="8" four="10" five="12" six="14" />
+			<Single kill="2" destroy="2" armor="0" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Burst kill="2" destroy="10" armor="10" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Kick kill="0" destroy="5" armor="5" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Special kill="50" destroy="50" armor="50" easy="1" normal="1" hard="0.5" zero="1" one="4"
+				two="6" three="8" four="10" five="12" six="14" />
+			<Wall kill="10" destroy="10" armor="0" easy="1.5" normal="1" hard="0.749998" zero="1"
+				one="4" two="6" three="8" four="10" five="12" six="14" />
+		</Hotsuma>
+		<Joe>
+			<Slash kill="2.5" destroy="2.5" armor="0" easy="2" normal="1" hard="0.749998" zero="1"
+				one="2" two="3" three="4" four="5" five="6" six="7" />
+			<Single kill="5" destroy="5" armor="2.5" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Burst kill="5" destroy="10" armor="10" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Kick kill="0" destroy="5" armor="5" easy="2" normal="1" hard="0.75" zero="1" one="1"
+				two="1" three="1" four="1" five="1" six="1" />
+			<Wall kill="5" destroy="5" armor="0" easy="1.5" normal="1" hard="0.749998" zero="1" one="2"
+				two="3" three="4" four="5" five="6" six="7" />
+		</Joe>
+	</Characters>
+	<Stages>
+		<Stage id="1">
+			<Enemy name="灰忍" alias="德鲁依" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="盾牌忍" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="固定炮台" type="enemy" flame="50" hp="20">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞机中央的挡板" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+				<Exceptions>
+					<Exception name="SlashDeath" />
+				</Exceptions>
+			</Enemy>
+			<Enemy name="飞机两侧的挡板" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+				<Exceptions>
+					<Exception name="SlashDeath" />
+				</Exceptions>
+			</Enemy>
+			<Enemy name="飞机两侧挡板(BOSS)" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+				<Exceptions>
+					<Exception name="SlashDeath" />
+				</Exceptions>
+			</Enemy>
+			<Enemy name="黑钢α" type="enemy" flame="50" hp="150" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="2">
+			<Enemy name="小型爬虫" type="enemy" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿飞虫" type="enemy" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大型绿爬虫" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="巨型绿爬虫" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="灰绿色大电表箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="棕色矮木箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="叠放起来的红棕色水泥板" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄色正八边形圆柱筒罐" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄色吊车控制器" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="竖放高黄色换气扇铁箱" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="横放矮黄色换气扇铁箱" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄色雷达接受器" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加体力槽上限的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="弄坏 伯足" type="enemy" flame="50" hp="187.5" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="true" value="3" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="3">
+			<Enemy name="小型爬虫" type="enemy" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿飞虫" type="enemy" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝爬虫" type="enemy" flame="50" hp="20">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="巨型蓝爬虫" type="enemy" flame="50" hp="45">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝灰色售货机" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝灰色洗衣机" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="小灰色正四棱柱型垃圾箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="小电表箱" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大电表箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="摆放在一起的木箱（大）" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝灰色储物铁箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="铁门A" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="水泥废墟坍塌物" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="生锈的棕色方型铁柱" type="thing" flame="50" hp="20">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="铁门B" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝色废墟水泥门" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="腐道 地潜跋扈" type="enemy" flame="50" hp="225" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="true" value="5" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="4">
+			<Enemy name="灰忍" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="盾牌忍" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞行炮台" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞忍" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="自动售货机" type="thing" flame="50" hp="7">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="竖放的白色空调箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="横放的白色空调箱" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="小轿车" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="面包车" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="红绿交通灯" type="thing" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="放在楼顶的灰黄色圆筒型罐子" type="thing" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="自动售货机(BOSS)" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="废墟墙壁(BOSS)" type="thing" flame="50" hp="20">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="电话厅(BOSS)" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装蓝色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="分值是1000的币箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="风车" type="enemy" flame="50" hp="300" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="5">
+			<Enemy name="大型灰爬虫" type="enemy" flame="50" hp="20">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="强化绿飞虫" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="巨型灰爬虫" type="enemy" flame="50" hp="50">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大木箱" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色钢筋水泥板" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黑白相间长棍型路障" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色空调箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大木箱（BOSS）" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色钢筋水泥板（BOSS）" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色空调箱（BOSS）" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="参魔 拜斧吏" type="enemy" flame="50" hp="250" boss="true">
+				<Armor switch="true" value="15" />
+				<Defianse switch="true" value="3" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="6">
+			<Enemy name="盾牌忍" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞行炮台" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿炮忍" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="简易公用电话（BOSS）" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="非常电话标识（BOSS）" type="thing" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="非常出口标识（BOSS）" type="thing" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="鬼火" type="enemy" flame="50" hp="500" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Left" value="1" />
+					<Side name="Right" value="0.4" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="7">
+			<Enemy name="飞行炮台" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大型炮台" type="enemy" flame="50" hp="40">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大刀忍" type="enemy" flame="50" hp="20">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿炮忍" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞虫（boss）" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装满书的书柜" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色办公桌" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大木箱" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="墨绿色电表箱" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="墨绿色电脑服务器机箱" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="电脑桌加显示器" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色铁柜" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="下层装书的书柜" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="电脑机箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="扁平淡黄绿色变压器箱子" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装罐子的箱子" type="thing" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大铁笼子" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="分值是1000的币箱" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱(2区)" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱(3区)" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="灰白色的铁罐子(BOSS)" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="遣疫 磷舞" type="enemy" flame="50" hp="525" boss="true">
+				<Armor switch="true" value="15" />
+				<Defianse switch="true" value="3" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+				<Exceptions>
+					<Exception name="Armor:10,20" />
+					<Exception name="ArmorNotWithBody" />
+					<Exception name="NotJoeBurstArmorBreak" />
+					<Exception name="HotsumaSpecialArmorBreak" />
+					<Exception name="WindNotDamageHp" />
+				</Exceptions>
+			</Enemy>
+		</Stage>
+		<Stage id="8">
+			<Enemy name="飞行炮台" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大型炮台" type="enemy" flame="50" hp="40">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大刀忍" type="enemy" flame="50" hp="20">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿炮忍" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="飞忍" type="enemy" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="有KEEP OUT字样的灰白色铁门" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="普通灰白色铁门" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大型灰白色铁门" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="铁条栅栏门" type="thing" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黑色铁门" type="thing" flame="50" hp="30">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大型黑色铁门" type="thing" flame="50" hp="30">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色轿车(BOSS)" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黑色轿车(BOSS)" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加体力槽上限的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="分值是1000的币箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="装白色胶囊的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="分值是500的币箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黑钢β" type="enemy" flame="50" hp="550" boss="true">
+				<Armor switch="true" value="25" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+				<Exceptions>
+					<Exception name="ArmorDoesNotBreak" />
+				</Exceptions>
+			</Enemy>
+		</Stage>
+		<Stage id="9">
+			<Enemy name="飞行炮台" type="enemy" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大刀忍" type="enemy" flame="50" hp="20">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="绿炮忍" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="地虫" type="enemy" flame="50" hp="575" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2.3" />
+				</Sides>
+				<Exceptions>
+					<Exception name="RP" />
+				</Exceptions>
+			</Enemy>
+		</Stage>
+		<Stage id="10">
+			<Enemy name="胖蛾子(2翅)" type="enemy" flame="50" hp="15">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="小型爬虫" type="enemy" flame="50" hp="7.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大黄壳爬虫" type="enemy" flame="50" hp="45">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="瘦蚊子（6翅）" type="enemy" flame="50" hp="25">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝白色轿车" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="白色面包车" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄色大巴士" type="thing" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="蓝白色轿车(BOSS)" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="加半格气的箱子" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="翡水" type="enemy" flame="50" hp="600" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="11">
+			<Enemy name="黑色爬虫" type="enemy" flame="50" hp="25">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="胖蛾子（2翅）" type="enemy" flame="50" hp="15">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="瘦蚊子" type="enemy" flame="50" hp="20">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄甲巨虫" type="enemy" flame="50" hp="45">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="长H型钢" type="thing" flame="50" hp="15">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="分值是5000的币箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="地狱门" type="enemy" flame="50" hp="350" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="12">
+			<Enemy name="胖蛾子" type="enemy" flame="50" hp="15">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="瘦蚊子" type="enemy" flame="50" hp="20">
+				<Armor switch="true" value="5" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黄甲巨虫（大头）" type="enemy" flame="50" hp="45">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="大黄壳爬虫" type="enemy" flame="50" hp="45">
+				<Armor switch="true" value="10" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+			<Enemy name="1区角落里的绿色小虫卵" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="1区角落里的淡黄绿色小虫卵" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="1区角落里稍大一点的绿色小虫卵" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="4区巨型大树主干上的绿色大虫卵" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="4区巨型大树道路上的绿色大虫卵" type="thing" flame="50" hp="2">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="普通钢轨(BOSS)" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="生锈的长钢轨(BOSS)" type="thing" flame="50" hp="10">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="忍卷箱（3区）" type="thing" flame="50" hp="2.5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="手（BOSS）" type="thing" flame="50" hp="35">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+				<Exceptions>
+					<Exception name="Hp:25,40" />
+				</Exceptions>
+			</Enemy>
+			<Enemy name="霸邪 弄蠢母" type="enemy" flame="50" hp="600" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="true" value="3" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+		</Stage>
+		<Stage id="13">
+			<Enemy name="长朽木" type="thing" flame="50" hp="5">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="true" value="1" />
+				<Sides>
+					<Side name="Front" value="1" />
+				</Sides>
+			</Enemy>
+			<Enemy name="黑钢f（变身前）" type="enemy" flame="25" hp="210" boss="true">
+				<Armor switch="true" value="25" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+				<Exceptions>
+					<Exception name="Armor:25,37.5" />
+					<Exception name="HotsumaSlashNoDamage" />
+					<Exception name="JoeShurikenNoArmor" />
+					<Exception name="WomenSpecialNoArmor" />
+				</Exceptions>
+			</Enemy>
+			<Enemy name="黑钢f（变身后）" type="enemy" flame="25" hp="490" boss="true">
+				<Armor switch="false" />
+				<Defianse switch="false" />
+				<Shuriken switch="false" />
+				<Sides>
+					<Side name="Front" value="1" />
+					<Side name="Side" value="1" />
+					<Side name="Back" value="2" />
+				</Sides>
+			</Enemy>
+		</Stage>
+	</Stages>
+</Kunoichi>
